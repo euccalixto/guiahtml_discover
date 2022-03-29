@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>complex table</title>
+	<style type="text/css">
+		table thead th{
+			color: #fff;
+		}
+		table tbody td{
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<caption>produced x selled </caption>
+		<colgroup>
+			<col>
+			<col span="2" style="background-color: #ff0000;">
+			<col span="2" style="background-color: #0000ff;">
+		</colgroup>
+		<thead>
+			<tr>
+				<th rowspan="2"></th>
+				<th scope="colgroup" colspan="2">Store one</th>
+				<th scope="colgroup" colspan="2">Store two</th>
+			</tr>
+			<tr>
+				<th scope="col">produced</th>
+				<th scope="col">selled</th>
+				<th scope="col">produced</th>
+				<th scope="col">selled</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">Computer</th>
+				<td>200</td>
+				<td>190</td>
+				<td>200</td>
+				<td>100</td>
+			</tr>
+			<tr>
+				<th scope="row">Notebook</th>
+				<td>280</td>
+				<td>199</td>
+				<td>280</td>
+				<td>250</td>
+			</tr>
+			
+		</tbody>
+	</table>
+</body>
+</html>
